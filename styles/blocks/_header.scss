@@ -1,0 +1,69 @@
+html, * {
+  margin: 0px;
+  top: 0px;
+
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  background-color: #541554;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+
+a {
+    color: white;
+  }
+  
+  &-logo {
+    width: 400px;
+    a {
+      font-size: 40px;
+    }
+    img {
+      width: 40px;
+    }
+  }
+  
+  &-aburgerLogo{
+    width:83px;
+    height: 100px;
+    padding: 0px;
+    &-logo{
+      width: 100px;
+    }
+  }
+  
+  &-nav {
+    height:0px;
+    visibility:hidden; 
+    display:none; 
+    // display: flex;  // lo que esta comentado es para que aparezcac apartir de 1024//
+    // flex-direction: row;
+    // justify-content: center;
+    // align-content: center;
+    // flex-wrap: nowrap;
+  }
+
+  &-nav > ul > li ul {
+    display: none;
+    position: relative;
+  }
+
+  &-nav > ul > li:hover ul {
+    display: flex;
+    position: absolute;
+    background-color: rgb(167, 40, 40);
+    top: 300px;
+    flex-direction: row;
+  }
+}
+
+
